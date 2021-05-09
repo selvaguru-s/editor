@@ -1,0 +1,117 @@
+@font-face {
+  font-family: "Monaco";
+  src: url("./../fonts/monaco.ttf");
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
+#page-container {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+}
+
+#page-container #sidebar {
+  position: fixed;
+  float: left;
+  height: 100%;
+  width: 50px;
+  background-color: #0d47a1;
+  text-align: center;
+}
+
+#page-container #sidebar #main-logo {
+  height: 45px;
+  width: 135px;
+  margin: 50px 0px 0px -45px;
+  transform: rotate(-90deg);
+  position: relative;
+  cursor: pointer;
+}
+
+#page-container #sidebar #button-container {
+  position: relative;
+  margin-top: 140px;
+  width: 100%;
+  height: 250px;
+  text-align: center;
+}
+
+#page-container #sidebar #button-container .btn {
+  margin: auto;
+  width: 100%;
+  height: 50px;
+  cursor: pointer;
+  transition: 1s linear;
+}
+
+#page-container #sidebar #button-container .btn .btn-ico {
+  height: 30px;
+  width: 30px;
+  margin: 10px;
+}
+
+#page-container #sidebar #button-container .active-btn {
+  transition: 0.1s linear;
+  border-left: 3px solid white;
+}
+
+#page-container #sidebar #araekiel-logo {
+  height: 25px;
+  /* margin: 0px 0px 10px -17px; */
+  margin-left: -65px;
+  transform:   rotate(-90deg);
+  position: fixed;
+  bottom: 60px;
+  cursor: pointer;
+}
+
+#field-container {
+  position: fixed;
+  left: 50px;
+  height: 100%;
+  width: calc(100% - 50px);
+}
+
+#field-container .field {
+  height: 100%;
+  float: left;
+  border: 0px;
+  resize: none;
+  display: none;
+  cursor: pointer;
+}
+
+#field-container .input-f {
+  background-color: white;
+  color: black;
+  font-size: 18px;
+  font-family: "Monaco";
+}
+
+#field-container .input-f::placeholder {
+  color: black;
+}
+
+#field-container .output-f {
+  background-color: white;
+  color: black;
+  padding: 0px;
+}
+
+#field-container .maximized-field {
+  display: block;
+  transition: 0.1s linear;
+}
+
+#field-container .inactive-field {
+  background-color: #e4edfd;
+  color: #568ff3;
+}
+
+#field-container .inactive-field::placeholder {
+  color: #568ff3;
+}
